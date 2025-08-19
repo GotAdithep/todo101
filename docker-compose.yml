@@ -12,7 +12,7 @@ services:
   todo_backend:
     container_name: todo_backend
     build: ./backend
-    image: isp-backend:1.0
+    image: todo101-todo-backend:latest
     ports:
       - "15000:15000"
     volumes:
@@ -24,7 +24,7 @@ services:
   todo_frontend:
     container_name: todo_frontend
     build: ./frontend
-    image: isp-frontend:1.0
+    image: todo101-todo-frontend:latest
     ports:
       - "3000:3000"
     volumes:
